@@ -3,6 +3,7 @@ import 'package:food_recipe/views/home.dart';
 
 void main() {
   runApp(MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
 }
 
 class MyApp extends StatelessWidget {
