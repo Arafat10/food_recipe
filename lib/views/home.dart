@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_recipe/views/widgets/recipe_card.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -22,6 +23,11 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      body: RecipeCard(
+          title: 'MyRecipe',
+          cookTime: '30 minutes',
+          rating: '3',
+          thumbnailUrl: 'http'),
     );
   }
 }
