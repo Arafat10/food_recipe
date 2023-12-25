@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_recipe/views/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,10 +15,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         primaryColor: Colors.white,
         textTheme: TextTheme(
-          bodyText2: TextStyle(color: Colors.white),
+          bodyMedium: TextStyle(color: Colors.white),
         ),
       ),
-      home: Scaffold(),
+      home: HomePage(),
     );
   }
 }

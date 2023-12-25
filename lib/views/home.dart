@@ -10,10 +10,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(children: [
-          Icon(Icons.restaurant_menu),
-        ],),
-      )
-    )
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.restaurant_menu),
+            SizedBox(
+              width: 10,
+              height: 10,
+            ),
+            Text('Food Recipe'),
+          ],
+        ),
+      ),
+    );
   }
 }
